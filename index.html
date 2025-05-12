@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eye Tracking AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Eye Tracking on Social Media</h1>
+    <div class="video-container">
+        <img src="{{ url_for('video_feed') }}" id="videoFeed">
+    </div>
+    <div class="feed">
+        <p>Scroll to view posts. Your attention is being tracked!</p>
+        <ul>
+            <li><strong>Post 1:</strong> New AI tool released!</li>
+            <li><strong>Post 2:</strong> Elon tweets again!</li>
+            <li><strong>Post 3:</strong> 10 hacks for productivity</li>
+            <li><strong>Post 4:</strong> Is ChatGPT replacing jobs?</li>
+        </ul>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
